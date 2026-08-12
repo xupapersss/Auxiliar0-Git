@@ -8,7 +8,6 @@ class Usuario:
         for tarea in self.tareas:
             if tarea.estaLista():
                 print(f"[X] {tarea.obtenerNombre()}" )
-            else:
-                print(f"[ ] {tarea.obtenerNombre()}" )
+
     def agregarTarea(self, tarea):
         self.tareas.append(tarea)
